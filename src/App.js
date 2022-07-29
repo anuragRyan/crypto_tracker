@@ -42,6 +42,7 @@ export default class App extends Component {
           mCap24={this.state.data.market_data ? this.state.data.market_data.market_cap_change_percentage_24h : ''}
           ath={this.state.data.market_data ? this.state.data.market_data.ath.inr : ''} atl={this.state.data.market_data ? this.state.data.market_data.atl.inr : ''}
           high24={this.state.data.market_data ? this.state.data.market_data.high_24h.inr : ''} low24={this.state.data.market_data ? this.state.data.market_data.low_24h['inr'] : ''}/>
+        
         <ChartSection id = {this.state.id} marketCap = {this.state.data.market_data ? this.state.data.market_data.market_cap.inr : ""}
           priceChange24 = {this.state.data.market_data ? this.state.data.market_data.price_change_24h_in_currency.inr : ""}
           totalVol = {this.state.data.market_data ? this.state.data.market_data.total_volume.inr : ""}
